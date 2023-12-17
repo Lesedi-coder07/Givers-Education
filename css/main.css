@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header-home {
+    width: 100%;
+    background-image: url('/images/bck123.jpg');
+    height: 100vh;
+    background-color: rgb(218, 214, 214);
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-repeat: no-repeat; 
+    
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 77px;
+
+}
+
+.nav-list > li {
+    margin-left: 18px;
+    margin-top: 50px;
+}
+
+
+.nav-list > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar > .logo > img {
+ width: 150px;
+ margin: 30px 0  0 60px;
+}
+
+.main-text {
+    margin-top: 180px;
+    margin-left: 300px ;
+    margin-right: 300px;
+    color: white;
+}
+
+.main-text > h1 {
+    font-size: 80px;
+}
+
+.main-text > p {
+    margin-right: 500px;
+    margin-bottom: 30px;
+}
+
+.main-text > .enroll-btn {
+    text-decoration: none;
+    color: #222;
+    font-size: 20px;
+    margin-top: 200px;
+    background-color: #FB8B24;
+    padding: 14px 33px 14px 33px;
+    border-radius: 20px;
+}
+
+
+.experience-section {
+    padding: 50px;
+    background-color: #5F0F40;
+    color: white;
+}
+
+.experience-section > .headline {
+    text-align: center;
+    font-size: 28px;
+}
+
+.experience-section > .stats {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.stats > .card {
+    margin-top: 20px;
+    width: 250 ;
+    padding: 35px;
+    background-color: #FB8B24;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card > h1 > strong {
+    color: #5F0F40;
+}
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.welcome-content {
+ margin: 77px 250px 50px 250px;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ 
+}
+.welcome-content > .text  {
+    width: 500px;
+}
+.welcome-content > .text {
+  margin-left: 100px;
+}
+.welcome-content > .text > h1 {
+ font-size: 45px;
+}
+
+.welcome-content > .teacher-img {
+    width: 350px;
+    border-radius: 23px;
+}
