@@ -118,10 +118,9 @@ body {
 }
 .welcome-content > .text  {
     width: 500px;
+    margin-left: 100px;
 }
-.welcome-content > .text {
-  margin-left: 100px;
-}
+
 .welcome-content > .text > h1 {
  font-size: 45px;
 }
@@ -129,4 +128,94 @@ body {
 .welcome-content > .teacher-img {
     width: 350px;
     border-radius: 23px;
+}
+
+
+
+.course-img {
+    max-width: 250px;
+    object-fit: cover;
+}
+
+.course-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.course-block {
+    background-color: #7d1254;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    margin: 100px;
+    color: #fff;
+
+}
+
+.course-block > img {
+  border-radius: 12px;
+}
+
+.course-block > .details {
+    display: flex; 
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
+.course-block > h2 {
+   margin: 17px 3px;
+}
+
+
+.course-section-h1 {
+    color: #FB8B24;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.course-block > .extra-details > ul{
+    list-style: none;
+  
+}
+.course-block > .extra-details > ul > li {
+    margin-top: 11px;
+    color: whitesmoke;
+}
+
+.course-block-btn {
+    margin-top: 30px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    background-color: #FB8B24;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-radius: 23px;
+}
+
+.contact-form {
+    background-color: whitesmoke;
+    width: 100%;
+    
+    display: flex;
+}
+
+.contact-form .left {
+    flex: 0.5;
+    background-color: #222;
+}
+
+.contact-form .left > img {
+ max-width:100%
+}
+.contact-form .right {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
