@@ -199,23 +199,85 @@ body {
 }
 
 .contact-form {
-    background-color: whitesmoke;
+    background-color: #1C3144;
     width: 100%;
-    
+    max-width: 1600px;
     display: flex;
+    margin: 50px auto;
+    color: white;
+    border-radius: 30px;
 }
 
 .contact-form .left {
     flex: 0.5;
-    background-color: #222;
+    background: none;
+    height: auto;
+    background-size: cover;
+    border-radius: 30px;
+    background-image: url('/images/pexels-anastasiya-gepp-1462630.jpg');
 }
 
 .contact-form .left > img {
- max-width:100%
+ max-width:100%;
+ height: max-content;
+ border-radius: 30px;
 }
 .contact-form .right {
     flex: 0.5;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.contact-form form > input {
+    margin-top: 7px;
+    margin-bottom: 20px;
+    background: none;
+    border: 1px whitesmoke solid;
+    color: white;
+    padding: 10px;
+    width: 240px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.contact-form form > textarea {
+    width: 258px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    background: none;
+    border: 1px whitesmoke solid;
+    color: white;
+    padding: 10px;
+    width: 240px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.contact-form form > button {
+    width: 260px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #3F88C5;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.contact-form form > button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.contacth1 {
+    text-align: center;
+    color: #FB8B24;
 }
