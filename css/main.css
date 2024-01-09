@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Yatra+One&display=swap');
 body {
     overflow-x: hidden;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 .header-home {
     width: 100%;
@@ -36,6 +37,17 @@ body {
     margin-top: 50px;
 }
 
+.nav-list .enroll-btn {
+    background-color: #FB8B24;
+    color: #222;
+    padding: 14px 33px 14px 33px;
+    border-radius: 20px;
+    transition: 0.475s ease-in-out;
+}
+.nav-list .enroll-btn:hover {
+    background-color: #5F0F40;
+    color: white;
+}
 
 .nav-list > li > a {
     color: white;
@@ -199,12 +211,13 @@ body {
 }
 
 .contact-form {
-    background-color: #1C3144;
+    /* background-color: #1C3144; */
+    border: #222 solid 0.3px;
     width: 100%;
     max-width: 1600px;
     display: flex;
     margin: 50px auto;
-    color: white;
+    color: #000;
     border-radius: 30px;
 }
 
@@ -228,14 +241,16 @@ body {
     justify-content: center;
     margin-top: 70px;
     margin-bottom: 30px;
+    /* border: solid black; */
+
 }
 
 .contact-form form > input {
     margin-top: 7px;
     margin-bottom: 20px;
     background: none;
-    border: 1px whitesmoke solid;
-    color: white;
+    border: 1px rgb(187, 187, 187) solid;
+    color: #000;
     padding: 10px;
     width: 240px;
     outline: none;
@@ -249,8 +264,8 @@ body {
     margin-top: 7px;
     margin-bottom: 20px;
     background: none;
-    border: 1px whitesmoke solid;
-    color: white;
+    border: 1px rgb(187, 187, 187) solid;
+    color: #000;
     padding: 10px;
     width: 240px;
     outline: none;
@@ -281,3 +296,285 @@ body {
     text-align: center;
     color: #FB8B24;
 }
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0px 0 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer__logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+  
+  .footer__logo h1 {
+    font-size: 1.5em;
+    margin-left: 50px;
+  }
+  
+  .footer__links, .footer__contact {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 100px
+  }
+  
+  .footer__links h2, .footer__contact h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer__links ul {
+    list-style: none;
+  }
+  
+  .footer__links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__links a:hover {
+    color: #FB8B24;
+  }
+  
+  .footer__contact p {
+    margin-bottom: 10px;
+  }
+  
+  .footer__bottom {
+    background-color: #444;
+    padding: 10px 0;
+  }
+  
+  .footer__bottom p {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .footer__social {
+    margin-top: 10px;
+  }
+  
+  .footer__social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.2em;
+  }
+  
+  
+/* ADDMISSIONS PAGE _-------------------------------------------------------- */
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Rest of the CSS remains the same */
+ 
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  .header {
+    position: relative;
+    /* background: url('/images/pexels-cdc-3992949.jpg') center/cover; */
+    color: #000;
+    text-align: center;
+    padding: 4px 0 24px 0;
+  }
+  
+  .header__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(209, 197, 197, 0.5); /* Dimmed background */
+  }
+  
+  .header__title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .header__navbar {
+    position: sticky;
+    top: 0;
+  }
+  
+  .header__navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header__navbar li {
+    margin: 0 15px;
+  }
+  
+  .header__navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+    transition: color 0.3s ease;
+  }
+  .Logo {
+    margin-top: -30px;
+  }
+  .header__navbar a:hover {
+    color: #FB8B24;
+  }
+  
+  /* Admissions Page Styles */
+  .admissions {
+    padding: 50px 0;
+  }
+ li .active {
+    color: #FB8B24;
+  }
+  .admissions h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .admissions__requirements, .admissions__application, .admissions__contact {
+    margin-bottom: 40px;
+  }
+  
+  .admissions__requirements h2, .admissions__application h2, .admissions__contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .admissions__requirements ul, .admissions__application ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .admissions__requirements li, .admissions__application li {
+    margin-bottom: 10px;
+  }
+  
+  .admissions__contact p {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer__social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.2em;
+  }
+  #XYZ {
+ color: #fff;
+  }
+
+  /* Add or update styles as needed */
+
+.fees {
+    padding: 50px 0;
+  }
+  
+  .fees h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .fees p {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .fees-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  .fees-table th, .fees-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .orange-row {
+    background-color: #FB8B24;
+    color: #fff;
+  }
+  
+  /* Rest of the styles remain the same */
+  /* Add or update styles as needed */
+
+.payment {
+    padding: 50px 0;
+  }
+  
+  .payment h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .payment p {
+    margin-bottom: 40px;
+  }
+  
+  .payment-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto !important;
+  }
+  
+  .payment-table th, .payment-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  .text-center {
+   text-align: center;
+}
+  /* Add or update styles as needed */
+/* 
+.academics {
+    padding: 50px 0;
+  }
+  
+  .academics h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .academics h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+   */
+  /* Rest of the styles remain the same */
+   

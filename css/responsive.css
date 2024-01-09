@@ -98,7 +98,14 @@
         /* .contact-form > .rig {
             flex: 0.8;
         } */
-}
+
+        .footer__links, .footer__contact {
+            flex: 1 0 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+         }
+
 
 
 
