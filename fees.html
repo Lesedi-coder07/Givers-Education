@@ -1,115 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Add any necessary external CSS or font files here -->
-  <title>Fees | University Name</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/responsive.css'>
+    <link rel="icon" type="image/png" href="images/Logos/Black.svg">
+
+
+    <!-- Add any necessary external CSS or font files here -->
+    <title>Fees | GE COLLEGE</title>
 </head>
+
 <body>
 
-<!-- Header Section -->
-<header class="header">
-  <div class="header__background"></div>
-  <div class="page-container">
-    <h1 class="header__title">Fees</h1>
-    <nav class="header__navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="academics.html">Academics</a></li>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- <div class="header__background"></div> -->
+        <div class="page-container">
+            <nav class="header__navbar">
+                <a href="index.html"><img src="images/Logos/45.svg" class="Logo" width="89px"> </a>
+                <ul>
+
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="academics.html" class="active">Academics</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                    <li><a href="#">Accreditation</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+                <div class="nav_button_wrapper">
+                    <a href="payments.html" class="enroll-btn-nav">Make a payment</a>
+                </div>
+
+                <img class='menu_icon' src="images/menu.svg" width="30px">
+            </nav>
+        </div>
+
+
+    </header>
+
+    <div id="overlay">
+        <img src="/images/icons/icons8-cross-30.png" id="close_nav_btn" width="30px" height="30px" alt="">
+        <nav class="header__navbar-mobile">
+            <a href="index.html"><img src="images/Logos/alt45.svg" class="Logo" width="159px"> </a>
+            <ul>
+
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="academics.html" class="active">Academics</a></li>
                 <li><a href="fees.html">Fees</a></li>
                 <li><a href="#">Accreditation</a></li>
-                <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+                <li><a href="contact.html">Contact Us</a></li>
 
-<!-- Fees Page Content -->
-<section class="fees">
-  <div class="page-container">
-    <h2>Below, you'll find information about our tuition fees, which can be paid monthly or yearly.</h2>
+            </ul>
 
-    <p>Fees can be paid either on a monthly or yearly basis, providing flexibility for our students to choose a payment plan that suits their needs.</p>
 
-    <table class="fees-table">
-      <thead>
-        <tr class="orange-row">
-          <th>Courses</th>
-          <th>Fees (per month)</th>
-          <th>Fees (Total)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Early Childhood Development N4 Certificate</td>
-          <td>R1045</td>
-          <td>R9770</td>
-        </tr>
-        <tr>
-          <td>Early Childhood Development N5 Certificate</td>
-          <td>R1045</td>
-          <td>R9770</td>
-        </tr>
-        <tr>
-          <td>Early Childhood Development N6 Certificate</td>
-          <td>R1045</td>
-          <td>R9770</td>
-        </tr>
-        <tr>
-          <td>Educare National Diploma </td>
-          <td>R1045</td>
-          <td>R22 310</td>
-        </tr>
-       
-      </tbody>
-    </table>
-  </div>
-</section>
+                <a href="payments.html" class="enroll-btn-nav">Make a payment</a>
 
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="container">
-      <div class="footer__logo">
-        <img src="images/Logo.png" alt="GE College Logo">
-        <h1>GE COLLEGE</h1>
-      </div>
-  
-      <div class="footer__links">
-        <h2>Quick Links</h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Admissions</a></li>
-          <li><a href="#">Academics</a></li>
-          <li><a href="#">Fees </a></li>
-          <li><a href="#">Accreditation</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer__contact">
-        <h2>Contact Information</h2>
-        <p><strong>Address:</strong> 451 Cecil Avenue, Pretoria, South Africa</p>
-        <p><strong>Phone:</strong> (123) 456-7890</p>
-        <p><strong>Email:</strong> info@university.edu</p>
-      </div>
+
+        </nav>
     </div>
-  
-    <div class="footer__bottom">
-      <div class="container">
-        <p>&copy; 2024 GE COLLEGE. All Rights Reserved.</p>
-        <div class="footer__social">
-          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+
+
+    <!-- Fees Page Content -->
+    <section class="fees">
+        <div class="page-container">
+            <h2 class="h2">Below, you'll find information about our tuition fees, which can be paid monthly or yearly.</h2>
+
+            <p class="p">Fees can be paid either on a monthly or yearly basis, providing flexibility for our students to choose a
+                payment plan that suits their needs.</p>
+
+            <table class="fees-table">
+                <thead>
+                    <tr class="orange-row">
+                        <th>Courses</th>
+                        <th>Fees (per month)</th>
+                        <th>Fees (Total)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Early Childhood Development N4 Certificate (6 months )</td>
+                        <td>R1045</td>
+                        <td>R9770</td>
+                    </tr>
+                    <tr>
+                        <td>Early Childhood Development N5 Certificate (6 months )</td>
+                        <td>R1045</td>
+                        <td>R9770</td>
+                    </tr>
+                    <tr>
+                        <td>Early Childhood Development N6 Certificate (6 months )</td>
+                        <td>R1045</td>
+                        <td>R9770</td>
+                    </tr>
+                    <tr>
+                        <td>Educare National Diploma (18 months ) </td>
+                        <td>R1045</td>
+                        <td>R22 310</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <h2 class="h2">Enrollment Fee</h2>
+            <p class="p">An <strong>Enrollment Fee</strong> of R3500 is required after the learner has been accepted. This sum
+                will go towards administration fees and learning materials etc. The learner's space will not be reserved
+                until the payment has been made</p>
         </div>
-      </div>
-    </div>
-  </footer>
 
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="images/Logos/alt45.svg" alt="GE College Logo">
+                <h1>GE COLLEGE</h1>
+            </div>
+
+            <div class="footer__links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Fees </a></li>
+                    <li><a href="#">Accreditation</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 451 Cecil Avenue, Pretoria, South Africa</p>
+                <p><strong>Phone:</strong> +27 79 707 4748</p>
+                <p><strong>Email:</strong> info@gecollege.com</p>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer_copy">&copy; 2024 GE COLLEGE. All Rights Reserved.</p>
+                <div class="footer__social">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="main.js"></script>
+
+    <script src="https://kit.fontawesome.com/a94e392dc7.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Yatra+One&display=swap');
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
+    min-height: 100vh;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 .header-home {
     width: 100%;
-    background-image: url('/images/bck123.jpg');
+    background-image: url('/images/bck123R.jpg');
     height: 100vh;
     background-color: rgb(218, 214, 214);
     background-size: cover;
@@ -37,14 +41,24 @@ body {
     margin-top: 50px;
 }
 
-.nav-list .enroll-btn {
+.nav_button_wrapper {
+    margin: auto 100px;
+}
+
+ .enroll-btn-nav {
     background-color: #FB8B24;
     color: #222;
-    padding: 14px 33px 14px 33px;
+    height: fit-content;
+    padding: 7px 25px 7px 25px;
     border-radius: 20px;
     transition: 0.475s ease-in-out;
+    
+    margin: auto 0;
+   margin-right: 100px;
+   text-decoration: none;
+   color: white;
 }
-.nav-list .enroll-btn:hover {
+ .enroll-btn-nav:hover {
     background-color: #5F0F40;
     color: white;
 }
@@ -56,7 +70,7 @@ body {
 
 .navbar > .logo > img {
  width: 150px;
- margin: 30px 0  0 60px;
+ margin: 10px 0  0 60px;
 }
 
 .main-text {
@@ -77,7 +91,7 @@ body {
 
 .main-text > .enroll-btn {
     text-decoration: none;
-    color: #222;
+    color: #fff;
     font-size: 20px;
     margin-top: 200px;
     background-color: #FB8B24;
@@ -88,13 +102,15 @@ body {
 
 .experience-section {
     padding: 50px;
+    padding-bottom: 90px;
     background-color: #5F0F40;
     color: white;
 }
 
 .experience-section > .headline {
     text-align: center;
-    font-size: 28px;
+    font-size: 38px;
+    font-weight: bold;
 }
 
 .experience-section > .stats {
@@ -277,7 +293,7 @@ body {
     outline: none;
     border: none;
     color: white;
-    background-color: #3F88C5;
+    background-color: #131720;
     padding: 10px;
     border-radius: 10px;
     font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -302,6 +318,10 @@ body {
     background-color: #333;
     color: #fff;
     padding: 40px 0px 0 0;
+    bottom: 0;
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
   }
   
   .container {
@@ -391,38 +411,38 @@ body {
   
   /* Header Styles */
   .header {
-    position: relative;
-    /* background: url('/images/pexels-cdc-3992949.jpg') center/cover; */
-    color: #000;
-    text-align: center;
-    padding: 4px 0 24px 0;
-  }
-  
-  .header__background {
-    position: absolute;
     top: 0;
-    left: 0;
+    position: sticky;
+    /* background: url('/images/pexels-cdc-3992949.jpg') center/cover; */
+    color: #fff;
+    text-align: center;
+    background-color: #131720;
+    box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75); 
+    /* padding: 0px 0 24px 0; */
     width: 100%;
-    height: 100%;
-    background: rgba(209, 197, 197, 0.5); /* Dimmed background */
   }
   
-  .header__title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: white;
-  }
+ 
+ 
   
   .header__navbar {
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
   }
   
   .header__navbar ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: auto 20px ;
     display: flex;
+    height: 100%;
     justify-content: center;
   }
   
@@ -432,14 +452,14 @@ body {
   
   .header__navbar a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 1em;
     transition: color 0.3s ease;
   }
-  .Logo {
+  /* .Logo {
     margin-top: -30px;
-  }
-  .header__navbar a:hover {
+  } */
+  .header__navbar ul > a:hover {
     color: #FB8B24;
   }
   
@@ -447,9 +467,7 @@ body {
   .admissions {
     padding: 50px 0;
   }
- li .active {
-    color: #FB8B24;
-  }
+ 
   .admissions h2 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -559,22 +577,139 @@ body {
   .text-center {
    text-align: center;
 }
-  /* Add or update styles as needed */
-/* 
-.academics {
+.normal-list {
+    color: red;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.payment-instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu_icon {
+    margin-right: 50px;
+    display: none;
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #131720; /* Black background with opacity */
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */ 
+}
+
+#overlay  .header__navbar-mobile {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-left: -47px;
+}
+
+#overlay  .header__navbar-mobile ul {
+    margin-bottom: 30px;
+    list-style: none;
+    margin-top: 10px;
+}
+#overlay  .header__navbar-mobile li {
+    margin-bottom: 10px;
+}
+#overlay  .header__navbar-mobile a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.enroll-btn-nav {
+    margin: 0;
+}
+
+#close_nav_btn {
+    padding: 30px 0 0 30px;
+}
+
+/* CSS for Contact Section */
+.contact {
     padding: 50px 0;
-  }
+display: flex;
+justify-content: center;  }
   
-  .academics h2 {
+  .contact h2 {
     font-size: 2em;
     margin-bottom: 20px;
   }
   
-  .academics h3 {
-    font-size: 1.5em;
-    margin-top: 30px;
-    margin-bottom: 15px;
+  .contact p {
+    margin-bottom: 30px;
   }
-   */
-  /* Rest of the styles remain the same */
-   
+  
+  .contact-details p, .working-hours p {
+    margin-bottom: 10px;
+  }
+  
+  .working-hours h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  /* CSS for Enrollment Documents Section */
+.enrollment-documents {
+    padding: 0 0 0 50px;
+    color: #fff;
+    background-color: #131720;
+    /* margin: 50px; */
+    height: 50vh;
+  }
+  
+  .enrollment-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  .enrollment-text {
+    width: 50%;
+  }
+  
+ 
+  
+  .enrollment-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .enrollment-text p {
+    margin-bottom: 30px;
+    flex: 0.5;
+  }
+  
+  .download-buttons {
+    /* display: flex;
+    flex-direction: column; */
+  }
+  
+  .download-button {
+    background-color: #2d68ff;
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .download-button:hover {
+    background-color: #1f4caf;
+  }
+  

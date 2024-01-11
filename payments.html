@@ -5,28 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/Logos/Black.svg">
+
     <!-- Add any necessary external CSS or font files here -->
-    <title>Payment | University Name</title>
+    <title>Payment | GE COLLEGE</title>
 </head>
 
 <body>
 
-    <!-- Header Section -->
     <header class="header">
-        <div class="header__background"></div>
+        <!-- <div class="header__background"></div> -->
         <div class="page-container">
-            <h1 class="header__title">Payment</h1>
             <nav class="header__navbar">
+                <a href="index.html"><img src="images/Logos/45.svg" class="Logo" width="89px">  </a>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    
                     <li><a href="admissions.html">Admissions</a></li>
-                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html" class="active">Academics</a></li>
                     <li><a href="fees.html">Fees</a></li>
                     <li><a href="#">Accreditation</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+                <div class="nav_button_wrapper">
+                    <a href="payments.html" class="enroll-btn-nav">Make a payment</a>
+               </div>
+                <img class='menu_icon' src="images/menu.svg" width="30px">
             </nav>
         </div>
+     
+    
     </header>
+    
+    <div id="overlay">
+        <img src="/images/icons/icons8-cross-30.png" id="close_nav_btn" width="30px" height="30px" alt="">
+        <nav class="header__navbar-mobile">
+            <a href="index.html"><img src="images/Logos/alt45.svg" class="Logo" width="159px">  </a>
+            <ul>
+                
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="academics.html" class="active">Academics</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="#">Accreditation</a></li>
+                <li><a href="#">Contact Us</a></li>
+                
+            </ul>
+            <a href="payments.html" class="enroll-btn-nav">Make a payment</a>
+        </nav>
+    </div>
 
     <!-- Payment Page Content -->
     <section class="payment">
@@ -47,10 +73,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>123456789</td>
-                        <td>University Bank</td>
-                        <td>5678</td>
-                        <td>Your Name and Surname</td>
+                        <td>62898089167</td>
+                        <td>First National Bank</td>
+                        <td>250 655 </td>
+                        <td>Surname + Student Number</td>
 
                     </tr>
 
@@ -59,12 +85,29 @@
         </div>
     </section>
 
+
+
+
+
+    <div class="payment-instructions" >
+        <h1>Please follow these guidelines when making any payment</h1>
+        <ul class="normal-list">
+            <li >Always Email Proof of Payment to <a href="mailto:d">info@gecollege.com</a></li>
+            <li>Double Check if you have entered the banking details accurately</li>
+            <li>Allow at least five working days for processing by your bank and retain the proof of payment (deposit slip).</li>
+            <li>No cash payments for tuition fees will be allowed</li>
+
+
+        </ul>
+        
+    </div>
+
+
     <!-- Footer Section -->
-   <!-- Footer Section -->
 <footer class="footer">
     <div class="container">
       <div class="footer__logo">
-        <img src="images/Logo.png" alt="GE College Logo">
+        <img src="images/Logos/4.svg" alt="GE College Logo">
         <h1>GE COLLEGE</h1>
       </div>
   
@@ -83,14 +126,14 @@
       <div class="footer__contact">
         <h2>Contact Information</h2>
         <p><strong>Address:</strong> 451 Cecil Avenue, Pretoria, South Africa</p>
-        <p><strong>Phone:</strong> (123) 456-7890</p>
-        <p><strong>Email:</strong> info@university.edu</p>
+        <p><strong>Phone:</strong> +27 79 707 4748</p>
+        <p><strong>Email:</strong> info@gecollege.com</p>
       </div>
     </div>
   
     <div class="footer__bottom">
       <div class="container">
-        <p>&copy; 2024 GE COLLEGE. All Rights Reserved.</p>
+        <p class="footer_copy">&copy; 2024 GE COLLEGE. All Rights Reserved.</p>
         <div class="footer__social">
           <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
           <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
@@ -100,6 +143,10 @@
       </div>
     </div>
   </footer>
+  <script src="js/nav.js"></script>
+  <script src="main.js"></script>
+
+  <script src="https://kit.fontawesome.com/a94e392dc7.js" crossorigin="anonymous"></script>
 
 </body>
 
