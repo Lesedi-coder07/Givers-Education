@@ -465,7 +465,7 @@ body {
   
   /* Admissions Page Styles */
   .admissions {
-    padding: 50px 0;
+    padding: 50px 0 10px 0;
   }
  
   .admissions h2 {
@@ -475,6 +475,10 @@ body {
   
   .admissions__requirements, .admissions__application, .admissions__contact {
     margin-bottom: 40px;
+  }
+  .admissions__requirements {
+    margin: 40px 0;
+    text-align: center;
   }
   
   .admissions__requirements h2, .admissions__application h2, .admissions__contact h2 {
@@ -490,6 +494,9 @@ body {
   
   .admissions__requirements li, .admissions__application li {
     margin-bottom: 10px;
+  }
+  .admissions > .enrollment-documents {
+    width: 100% !important;
   }
   
   .admissions__contact p {
