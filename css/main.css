@@ -14,13 +14,18 @@ body {
 }
 .header-home {
     width: 100%;
-    background-image: url('/images/bck123R.jpg');
+    background-image: url('/images/BCK31.jpg');
     height: 100vh;
-    background-color: rgb(218, 214, 214);
+    background-color: rgb(113, 110, 110);
     background-size: cover;
     background-blend-mode:multiply;
     background-repeat: no-repeat; 
     
+}
+
+.header-btns{
+  display: flex;
+  flex-wrap: wrap;
 }
 .navbar {
     display: flex;
@@ -89,12 +94,13 @@ body {
     margin-bottom: 30px;
 }
 
-.main-text > .enroll-btn {
+.main-text  .enroll-btn {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 20px;
-    margin-top: 200px;
-    background-color: #FB8B24;
+    margin-left: 5px;
+    margin-top: 30px;
+    background-color: #FFF;
     padding: 14px 33px 14px 33px;
     border-radius: 20px;
 }
@@ -465,7 +471,7 @@ body {
   
   /* Admissions Page Styles */
   .admissions {
-    padding: 50px 0 10px 0;
+    padding: 50px 20px 10px 20px;
   }
  
   .admissions h2 {
@@ -495,12 +501,13 @@ body {
   .admissions__requirements li, .admissions__application li {
     margin-bottom: 10px;
   }
-  .admissions > .enrollment-documents {
+   .enrollment-documents {
     width: 100% !important;
   }
   
   .admissions__contact p {
-    margin-bottom: 10px;
+    margin:10px 40px;
+    margin-left: -30px;
   }
   
   /* Footer Styles */
@@ -646,7 +653,7 @@ body {
 
 /* CSS for Contact Section */
 .contact {
-    padding: 50px 0;
+    padding: 50px 20px;
 display: flex;
 justify-content: center;  }
   
@@ -674,7 +681,7 @@ justify-content: center;  }
     color: #fff;
     background-color: #131720;
     /* margin: 50px; */
-    height: 50vh;
+    
   }
   
   .enrollment-content {

@@ -29,6 +29,37 @@
     }
 }
 
+@media  screen and (max-width: 1200px) {
+    .main-text {
+        margin: 0;
+        margin-top: 100px;
+        margin-left: 40px;
+
+
+    }
+
+    .enrollment-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0;
+        width: 100%;
+        height: fit-content;
+      }
+
+    .main-text>h1 {
+        font-size: 30px;
+        text-wrap: wrap;
+    }
+
+    .main-text>p {
+        margin-right: 100px;
+        font-size: 11px;
+    }
+
+}
+
 @media screen and (max-width: 800px) {
     .course-row {
 
@@ -138,5 +169,48 @@
     .fees > .page-container  .h2 ,     .fees > .page-container  .p {
         margin: 0 30px 10px 30px;
     }
+    .enrollment-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0;
+        width: 100%;
+        height: fit-content;
+      }
+  .download-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  } 
+  
+  .enrollment-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+  }
+
+  .download-button {
+    background-color: #2d68ff;
+    color: #fff;
+    padding: 5px 7px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .header-home {
+    width: 100%;
+    background-image: url('/images/BCK31.jpg');
+    height: 100vh;
+    background-color: rgb(113, 110, 110);
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-repeat: no-repeat; 
+    background-position-x: center;
+    
 }
+}
+
 
